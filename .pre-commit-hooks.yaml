@@ -4,7 +4,7 @@
     entry: clang-format -i
     language: python
     'types_or': [c++, c, c#, cuda, java, javascript, json, objective-c, proto, textproto, metal]
-    args: ["-style=file"]
+    args: ["-style=file:.clang-format-for-pre-commit"]
     require_serial: false
     additional_dependencies: []
     minimum_pre_commit_version: '2.9.2'
