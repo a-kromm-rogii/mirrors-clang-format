@@ -1,7 +1,7 @@
 -   id: clang-format
     name: clang-format
     description: ''
-    entry: clang-format
+    entry: clang-format -n
     language: python
     'types_or': [c++, c, c#, cuda, java, javascript, json, objective-c, proto, textproto]
     args: ["-style=file:.clang-format-for-pre-commit"]
