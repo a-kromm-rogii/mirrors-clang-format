@@ -1,10 +1,10 @@
 -   id: clang-format
     name: clang-format
     description: ''
-    entry: clang-format -n
+    entry: clang-format
     language: python
     files: \.(cpp|inl|hpp|h)$
-    args: ["-style=file:.clang-format-for-pre-commit"]
+    args: ["-style=file:.clang-format-for-pre-commit", "--Werror", "--dry-run"]
     require_serial: false
     additional_dependencies: []
     minimum_pre_commit_version: '2.9.2'
