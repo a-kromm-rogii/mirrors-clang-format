@@ -3,7 +3,7 @@
     description: ''
     entry: clang-format -n
     language: python
-    'types_or': [c++, c, c#, cuda, java, javascript, json, objective-c, proto, textproto]
+    files: \.(cpp|inl|hpp|h)$
     args: ["-style=file:.clang-format-for-pre-commit"]
     require_serial: false
     additional_dependencies: []
